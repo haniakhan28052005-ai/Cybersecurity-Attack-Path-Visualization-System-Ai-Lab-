@@ -1,4 +1,4 @@
-/* ========================= script.js ========================= */
+
 
 const canvas =
     document.getElementById("graphCanvas");
@@ -6,7 +6,7 @@ const canvas =
 const ctx =
     canvas.getContext("2d");
 
-/* ================= TREE ================= */
+
 
 const tree = {
 
@@ -49,7 +49,7 @@ const tree = {
     ]
 };
 
-/* ================= POSITIONS ================= */
+
 
 const positions = {
 
@@ -70,7 +70,7 @@ const positions = {
 
 let highlightedPath = [];
 
-/* ================= DRAW TREE ================= */
+
 
 function drawTree() {
 
@@ -86,7 +86,7 @@ function drawTree() {
     drawNodes();
 }
 
-/* ================= DRAW CONNECTIONS ================= */
+
 
 function drawConnections(node) {
 
@@ -132,7 +132,7 @@ function drawConnections(node) {
     }
 }
 
-/* ================= DRAW NODES ================= */
+
 
 function drawNodes() {
 
@@ -186,7 +186,7 @@ function drawNodes() {
             pos.y + 5
         );
 
-        /* LEAF VALUE */
+       
 
         if (
             node === "Node3" ||
@@ -211,7 +211,7 @@ function drawNodes() {
 
 drawTree();
 
-/* ================= MINIMAX ================= */
+
 
 let expandedNodes = 0;
 
@@ -287,7 +287,7 @@ function minimax(
     }
 }
 
-/* ================= ALPHA BETA ================= */
+
 
 function alphaBeta(
     node,
@@ -389,7 +389,7 @@ function alphaBeta(
     }
 }
 
-/* ================= ANIMATION ================= */
+
 
 async function animatePath(path) {
 
@@ -410,7 +410,7 @@ async function animatePath(path) {
     }
 }
 
-/* ================= RUN ================= */
+
 
 async function runAlgorithm() {
 
